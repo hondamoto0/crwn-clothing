@@ -10,7 +10,7 @@
     overflow: hidden;
     &:hover{
         cursor: pointer;
-        & .background-image{
+         .background-image{
             transform: scale(1.1);
             transition:3s all ease-out;
             -webkit-transition:3s all ease-out;
