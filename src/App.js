@@ -1,11 +1,15 @@
 import React from 'react';
 import './App.css';
-import './pages/homepage/homepage.styles.scss';
-import Directory from './components/directory/directory';
+
+import { Route } from 'react-router-dom';
+
+import ShopPage from './pages/shop/shop';
+import HomePage from './pages/homepage/homepage';
 function App() {
-  return (  
-    <div className="homepage">
-    <Directory/>
+  return (
+    <div>
+      <Route path='/' component={HomePage} />
+      <Route path='/shop' component={ShopPage} />
     </div>
   );
 }
